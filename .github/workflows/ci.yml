@@ -31,5 +31,7 @@ jobs:
           pyright app/
 
       - name: Run Tests with PyTest
+        env:
+          PYTHONPATH: .
         run: |
           pytest tests/
